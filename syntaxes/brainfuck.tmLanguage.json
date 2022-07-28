@@ -13,19 +13,25 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.brainfuck",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.brainfuck",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.brainfuck",
-					"match": "\\\\."
-				}
-			]
+				"match": "\\[|\\]"
+			},
+			{
+				"name":"keyword.operator.brainfuck",
+				"match": "[+-]"
+			},
+			{
+				"name":"variable.shift.brainfuck",
+				"match": "[<>]"
+			},
+			{
+				"name":"keyword.other.io.brainfuck",
+				"match": "[\\.,]"
+			},
+			{
+				"name": "comment.character.brainfuck",
+				"match": "[^+-<>\\.,\\[\\]]"
+			}
+		]
 		}
 	},
 	"scopeName": "source.brainfuck"
