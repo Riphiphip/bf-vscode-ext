@@ -1,0 +1,25 @@
+{
+  "name": "brainfuck",
+  "displayName": "Brainfuck",
+  "description": "VSCode language support for brainfuck",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "brainfuck",
+      "aliases": ["Brainfuck", "brainfuck"],
+      "extensions": [".bf",".b"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "brainfuck",
+      "scopeName": "source.brainfuck",
+      "path": "./syntaxes/brainfuck.tmLanguage.json"
+    }]
+  }
+}
