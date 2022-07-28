@@ -1,5 +1,6 @@
 {
   "name": "brainfuck",
+  "author": "Halvor Bjørstad",
   "displayName": "Brainfuck",
   "description": "VSCode language support for brainfuck",
   "version": "0.0.1",
